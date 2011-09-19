@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D39C1DE81426BC9F0017E5B7 /* BPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D39C1DE71426BC9F0017E5B7 /* BPKit.h */; };
+		D39C1DEC1426BCCC0017E5B7 /* NSString+BPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D39C1DEA1426BCCC0017E5B7 /* NSString+BPKit.h */; };
+		D39C1DED1426BCCC0017E5B7 /* NSString+BPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D39C1DEB1426BCCC0017E5B7 /* NSString+BPKit.m */; };
+		D39C1DF01426BD150017E5B7 /* NSDictionary+BPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D39C1DEE1426BD150017E5B7 /* NSDictionary+BPKit.h */; };
+		D39C1DF11426BD150017E5B7 /* NSDictionary+BPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D39C1DEF1426BD150017E5B7 /* NSDictionary+BPKit.m */; };
+		D39C1DF41426C1460017E5B7 /* NSURL+BPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D39C1DF21426C1460017E5B7 /* NSURL+BPKit.h */; };
+		D39C1DF51426C1460017E5B7 /* NSURL+BPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D39C1DF31426C1460017E5B7 /* NSURL+BPKit.m */; };
 		D3FCFFDC1426BB5A00EECE56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FCFFDB1426BB5A00EECE56 /* Foundation.framework */; };
 		D3FCFFE71426BB5A00EECE56 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FCFFE61426BB5A00EECE56 /* UIKit.framework */; };
 		D3FCFFE81426BB5A00EECE56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FCFFDB1426BB5A00EECE56 /* Foundation.framework */; };
@@ -28,6 +35,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D39C1DE71426BC9F0017E5B7 /* BPKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPKit.h; sourceTree = "<group>"; };
+		D39C1DEA1426BCCC0017E5B7 /* NSString+BPKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BPKit.h"; sourceTree = "<group>"; };
+		D39C1DEB1426BCCC0017E5B7 /* NSString+BPKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BPKit.m"; sourceTree = "<group>"; };
+		D39C1DEE1426BD150017E5B7 /* NSDictionary+BPKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+BPKit.h"; sourceTree = "<group>"; };
+		D39C1DEF1426BD150017E5B7 /* NSDictionary+BPKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+BPKit.m"; sourceTree = "<group>"; };
+		D39C1DF21426C1460017E5B7 /* NSURL+BPKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+BPKit.h"; sourceTree = "<group>"; };
+		D39C1DF31426C1460017E5B7 /* NSURL+BPKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+BPKit.m"; sourceTree = "<group>"; };
 		D3FCFFD81426BB5A00EECE56 /* libBPKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBPKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3FCFFDB1426BB5A00EECE56 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D3FCFFDF1426BB5A00EECE56 /* BPKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BPKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -97,6 +111,13 @@
 			isa = PBXGroup;
 			children = (
 				D3FCFFDE1426BB5A00EECE56 /* Supporting Files */,
+				D39C1DE71426BC9F0017E5B7 /* BPKit.h */,
+				D39C1DEA1426BCCC0017E5B7 /* NSString+BPKit.h */,
+				D39C1DEB1426BCCC0017E5B7 /* NSString+BPKit.m */,
+				D39C1DEE1426BD150017E5B7 /* NSDictionary+BPKit.h */,
+				D39C1DEF1426BD150017E5B7 /* NSDictionary+BPKit.m */,
+				D39C1DF21426C1460017E5B7 /* NSURL+BPKit.h */,
+				D39C1DF31426C1460017E5B7 /* NSURL+BPKit.m */,
 			);
 			path = BPKit;
 			sourceTree = "<group>";
@@ -136,6 +157,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D39C1DE81426BC9F0017E5B7 /* BPKit.h in Headers */,
+				D39C1DEC1426BCCC0017E5B7 /* NSString+BPKit.h in Headers */,
+				D39C1DF01426BD150017E5B7 /* NSDictionary+BPKit.h in Headers */,
+				D39C1DF41426C1460017E5B7 /* NSURL+BPKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D39C1DED1426BCCC0017E5B7 /* NSString+BPKit.m in Sources */,
+				D39C1DF11426BD150017E5B7 /* NSDictionary+BPKit.m in Sources */,
+				D39C1DF51426C1460017E5B7 /* NSURL+BPKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +410,7 @@
 				D3FCFFFD1426BB5A00EECE56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3FCFFFE1426BB5A00EECE56 /* Build configuration list for PBXNativeTarget "BPKitTests" */ = {
 			isa = XCConfigurationList;
@@ -390,6 +419,7 @@
 				D3FC00001426BB5A00EECE56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
