@@ -18,10 +18,14 @@
 // Trim whitespace and newlines from the current instance.
 - (NSString *)bp_trimmedString;
 
+// Parses a hex string (0xABCDEF or #ABCDEF) into a numeric value.
+- (int)bp_hexValue;
+
 #pragma mark - URL Encoding
 
-// Encodes characters not encoded by stringByAddingPercentEscapesUsingEncoding.
-- (NSString *)bp_stringByURLEncoding;
+// These methods are taken directly from MKNetworkKit. Big Thanks!
+- (NSString *)bp_urlEncodedString;
+- (NSString *)bp_urlDecodedString;
 
 #pragma mark - Searching
 

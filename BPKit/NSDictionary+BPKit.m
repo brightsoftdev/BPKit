@@ -7,7 +7,6 @@
 //
 
 #import "NSDictionary+BPKit.h"
-#import "NSString+BPKit.h"
 
 @implementation NSDictionary (BPKit)
 
@@ -53,8 +52,8 @@
     while ((key = [self.keyEnumerator nextObject])) {
         id value = [self objectForKey:key];
         NSString *component = [NSString stringWithFormat: @"%@=%@", 
-                               [key bp_stringByURLEncoding], 
-                               [value bp_stringByURLEncoding]];
+                               [key bp_urlEncodedString], 
+                               [value bp_urlEncodedString]];
         [components addObject:component];
     }
     return [components componentsJoinedByString: @"&"];

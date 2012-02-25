@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D32AD36A14F940D400B78073 /* BPTransparentToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = D32AD36814F940D400B78073 /* BPTransparentToolbar.h */; };
+		D32AD36B14F940D400B78073 /* BPTransparentToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = D32AD36914F940D400B78073 /* BPTransparentToolbar.m */; };
+		D32AD37614F9425900B78073 /* BPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D32AD36D14F9425900B78073 /* BPKit.m */; };
+		D32AD37714F9425900B78073 /* NSJSONSerialization+BPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D32AD36E14F9425900B78073 /* NSJSONSerialization+BPKit.h */; };
+		D32AD37814F9425900B78073 /* NSJSONSerialization+BPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D32AD36F14F9425900B78073 /* NSJSONSerialization+BPKit.m */; };
+		D32AD37D14F9425900B78073 /* UIColor+BPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D32AD37414F9425900B78073 /* UIColor+BPKit.h */; };
+		D32AD37E14F9425900B78073 /* UIColor+BPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D32AD37514F9425900B78073 /* UIColor+BPKit.m */; };
 		D39C1DE81426BC9F0017E5B7 /* BPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D39C1DE71426BC9F0017E5B7 /* BPKit.h */; };
 		D39C1DEC1426BCCC0017E5B7 /* NSString+BPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D39C1DEA1426BCCC0017E5B7 /* NSString+BPKit.h */; };
 		D39C1DED1426BCCC0017E5B7 /* NSString+BPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D39C1DEB1426BCCC0017E5B7 /* NSString+BPKit.m */; };
@@ -35,6 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D32AD36814F940D400B78073 /* BPTransparentToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPTransparentToolbar.h; sourceTree = "<group>"; };
+		D32AD36914F940D400B78073 /* BPTransparentToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTransparentToolbar.m; sourceTree = "<group>"; };
+		D32AD36D14F9425900B78073 /* BPKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPKit.m; sourceTree = "<group>"; };
+		D32AD36E14F9425900B78073 /* NSJSONSerialization+BPKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSJSONSerialization+BPKit.h"; sourceTree = "<group>"; };
+		D32AD36F14F9425900B78073 /* NSJSONSerialization+BPKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSJSONSerialization+BPKit.m"; sourceTree = "<group>"; };
+		D32AD37414F9425900B78073 /* UIColor+BPKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BPKit.h"; sourceTree = "<group>"; };
+		D32AD37514F9425900B78073 /* UIColor+BPKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BPKit.m"; sourceTree = "<group>"; };
 		D39C1DE71426BC9F0017E5B7 /* BPKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPKit.h; sourceTree = "<group>"; };
 		D39C1DEA1426BCCC0017E5B7 /* NSString+BPKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BPKit.h"; sourceTree = "<group>"; };
 		D39C1DEB1426BCCC0017E5B7 /* NSString+BPKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BPKit.m"; sourceTree = "<group>"; };
@@ -78,6 +92,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D32AD35614F93FFF00B78073 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D39C1DEE1426BD150017E5B7 /* NSDictionary+BPKit.h */,
+				D39C1DEF1426BD150017E5B7 /* NSDictionary+BPKit.m */,
+				D32AD36E14F9425900B78073 /* NSJSONSerialization+BPKit.h */,
+				D32AD36F14F9425900B78073 /* NSJSONSerialization+BPKit.m */,
+				D39C1DEA1426BCCC0017E5B7 /* NSString+BPKit.h */,
+				D39C1DEB1426BCCC0017E5B7 /* NSString+BPKit.m */,
+				D39C1DF21426C1460017E5B7 /* NSURL+BPKit.h */,
+				D39C1DF31426C1460017E5B7 /* NSURL+BPKit.m */,
+				D32AD37414F9425900B78073 /* UIColor+BPKit.h */,
+				D32AD37514F9425900B78073 /* UIColor+BPKit.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		D32AD35814F9400800B78073 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D32AD36814F940D400B78073 /* BPTransparentToolbar.h */,
+				D32AD36914F940D400B78073 /* BPTransparentToolbar.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		D3FCFFCD1426BB5A00EECE56 = {
 			isa = PBXGroup;
 			children = (
@@ -110,14 +150,11 @@
 		D3FCFFDD1426BB5A00EECE56 /* BPKit */ = {
 			isa = PBXGroup;
 			children = (
-				D3FCFFDE1426BB5A00EECE56 /* Supporting Files */,
+				D32AD35614F93FFF00B78073 /* Categories */,
+				D32AD35814F9400800B78073 /* Views */,
 				D39C1DE71426BC9F0017E5B7 /* BPKit.h */,
-				D39C1DEA1426BCCC0017E5B7 /* NSString+BPKit.h */,
-				D39C1DEB1426BCCC0017E5B7 /* NSString+BPKit.m */,
-				D39C1DEE1426BD150017E5B7 /* NSDictionary+BPKit.h */,
-				D39C1DEF1426BD150017E5B7 /* NSDictionary+BPKit.m */,
-				D39C1DF21426C1460017E5B7 /* NSURL+BPKit.h */,
-				D39C1DF31426C1460017E5B7 /* NSURL+BPKit.m */,
+				D32AD36D14F9425900B78073 /* BPKit.m */,
+				D3FCFFDE1426BB5A00EECE56 /* Supporting Files */,
 			);
 			path = BPKit;
 			sourceTree = "<group>";
@@ -161,6 +198,9 @@
 				D39C1DEC1426BCCC0017E5B7 /* NSString+BPKit.h in Headers */,
 				D39C1DF01426BD150017E5B7 /* NSDictionary+BPKit.h in Headers */,
 				D39C1DF41426C1460017E5B7 /* NSURL+BPKit.h in Headers */,
+				D32AD36A14F940D400B78073 /* BPTransparentToolbar.h in Headers */,
+				D32AD37714F9425900B78073 /* NSJSONSerialization+BPKit.h in Headers */,
+				D32AD37D14F9425900B78073 /* UIColor+BPKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +249,7 @@
 		D3FCFFCF1426BB5A00EECE56 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "Brian Partridge";
 			};
 			buildConfigurationList = D3FCFFD21426BB5A00EECE56 /* Build configuration list for PBXProject "BPKit" */;
@@ -265,6 +306,10 @@
 				D39C1DED1426BCCC0017E5B7 /* NSString+BPKit.m in Sources */,
 				D39C1DF11426BD150017E5B7 /* NSDictionary+BPKit.m in Sources */,
 				D39C1DF51426C1460017E5B7 /* NSURL+BPKit.m in Sources */,
+				D32AD36B14F940D400B78073 /* BPTransparentToolbar.m in Sources */,
+				D32AD37614F9425900B78073 /* BPKit.m in Sources */,
+				D32AD37814F9425900B78073 /* NSJSONSerialization+BPKit.m in Sources */,
+				D32AD37E14F9425900B78073 /* UIColor+BPKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,12 +347,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BPKitTests/BPKitTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "BPKitTests/BPKitTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -351,9 +398,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/BPKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BPKit/BPKit-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -363,9 +412,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DSTROOT = /tmp/BPKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BPKit/BPKit-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -375,12 +426,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BPKitTests/BPKitTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "BPKitTests/BPKitTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
