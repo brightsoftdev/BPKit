@@ -31,4 +31,5 @@ typedef enum {
 #pragma mark - Views
 
 #import "BPTransparentToolbar.h"
+#import "BPAlertView.h"
 

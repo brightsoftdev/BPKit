@@ -14,6 +14,8 @@
 		D32AD37814F9425900B78073 /* NSJSONSerialization+BPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D32AD36F14F9425900B78073 /* NSJSONSerialization+BPKit.m */; };
 		D32AD37D14F9425900B78073 /* UIColor+BPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D32AD37414F9425900B78073 /* UIColor+BPKit.h */; };
 		D32AD37E14F9425900B78073 /* UIColor+BPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D32AD37514F9425900B78073 /* UIColor+BPKit.m */; };
+		D360481814F9498200965DF6 /* BPAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = D360481614F9498200965DF6 /* BPAlertView.h */; };
+		D360481914F9498200965DF6 /* BPAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = D360481714F9498200965DF6 /* BPAlertView.m */; };
 		D39C1DE81426BC9F0017E5B7 /* BPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D39C1DE71426BC9F0017E5B7 /* BPKit.h */; };
 		D39C1DEC1426BCCC0017E5B7 /* NSString+BPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D39C1DEA1426BCCC0017E5B7 /* NSString+BPKit.h */; };
 		D39C1DED1426BCCC0017E5B7 /* NSString+BPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D39C1DEB1426BCCC0017E5B7 /* NSString+BPKit.m */; };
@@ -49,6 +51,8 @@
 		D32AD36F14F9425900B78073 /* NSJSONSerialization+BPKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSJSONSerialization+BPKit.m"; sourceTree = "<group>"; };
 		D32AD37414F9425900B78073 /* UIColor+BPKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BPKit.h"; sourceTree = "<group>"; };
 		D32AD37514F9425900B78073 /* UIColor+BPKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BPKit.m"; sourceTree = "<group>"; };
+		D360481614F9498200965DF6 /* BPAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAlertView.h; sourceTree = "<group>"; };
+		D360481714F9498200965DF6 /* BPAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAlertView.m; sourceTree = "<group>"; };
 		D39C1DE71426BC9F0017E5B7 /* BPKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPKit.h; sourceTree = "<group>"; };
 		D39C1DEA1426BCCC0017E5B7 /* NSString+BPKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BPKit.h"; sourceTree = "<group>"; };
 		D39C1DEB1426BCCC0017E5B7 /* NSString+BPKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BPKit.m"; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 		D32AD35814F9400800B78073 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D360481614F9498200965DF6 /* BPAlertView.h */,
+				D360481714F9498200965DF6 /* BPAlertView.m */,
 				D32AD36814F940D400B78073 /* BPTransparentToolbar.h */,
 				D32AD36914F940D400B78073 /* BPTransparentToolbar.m */,
 			);
@@ -201,6 +207,7 @@
 				D32AD36A14F940D400B78073 /* BPTransparentToolbar.h in Headers */,
 				D32AD37714F9425900B78073 /* NSJSONSerialization+BPKit.h in Headers */,
 				D32AD37D14F9425900B78073 /* UIColor+BPKit.h in Headers */,
+				D360481814F9498200965DF6 /* BPAlertView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +317,7 @@
 				D32AD37614F9425900B78073 /* BPKit.m in Sources */,
 				D32AD37814F9425900B78073 /* NSJSONSerialization+BPKit.m in Sources */,
 				D32AD37E14F9425900B78073 /* UIColor+BPKit.m in Sources */,
+				D360481914F9498200965DF6 /* BPAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
