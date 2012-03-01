@@ -24,6 +24,7 @@ typedef enum {
 
 #import "NSDictionary+BPKit.h"
 #import "NSJSONSerialization+BPKit.h"
+#import "NSSet+BPKit.h"
 #import "NSString+BPKit.h"
 #import "NSURL+BPKit.h"
 #import "UIColor+BPKit.h"

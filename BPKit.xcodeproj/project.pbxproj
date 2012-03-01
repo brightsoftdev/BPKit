@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D31F113614FF24FD00CC6D29 /* NSSet+BPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D31F113414FF24FD00CC6D29 /* NSSet+BPKit.h */; };
+		D31F113714FF24FD00CC6D29 /* NSSet+BPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F113514FF24FD00CC6D29 /* NSSet+BPKit.m */; };
 		D32AD36A14F940D400B78073 /* BPTransparentToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = D32AD36814F940D400B78073 /* BPTransparentToolbar.h */; };
 		D32AD36B14F940D400B78073 /* BPTransparentToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = D32AD36914F940D400B78073 /* BPTransparentToolbar.m */; };
 		D32AD37614F9425900B78073 /* BPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D32AD36D14F9425900B78073 /* BPKit.m */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D31F113414FF24FD00CC6D29 /* NSSet+BPKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+BPKit.h"; sourceTree = "<group>"; };
+		D31F113514FF24FD00CC6D29 /* NSSet+BPKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+BPKit.m"; sourceTree = "<group>"; };
 		D32AD36814F940D400B78073 /* BPTransparentToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPTransparentToolbar.h; sourceTree = "<group>"; };
 		D32AD36914F940D400B78073 /* BPTransparentToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTransparentToolbar.m; sourceTree = "<group>"; };
 		D32AD36D14F9425900B78073 /* BPKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPKit.m; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				D39C1DF31426C1460017E5B7 /* NSURL+BPKit.m */,
 				D32AD37414F9425900B78073 /* UIColor+BPKit.h */,
 				D32AD37514F9425900B78073 /* UIColor+BPKit.m */,
+				D31F113414FF24FD00CC6D29 /* NSSet+BPKit.h */,
+				D31F113514FF24FD00CC6D29 /* NSSet+BPKit.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -208,6 +214,7 @@
 				D32AD37714F9425900B78073 /* NSJSONSerialization+BPKit.h in Headers */,
 				D32AD37D14F9425900B78073 /* UIColor+BPKit.h in Headers */,
 				D360481814F9498200965DF6 /* BPAlertView.h in Headers */,
+				D31F113614FF24FD00CC6D29 /* NSSet+BPKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +325,7 @@
 				D32AD37814F9425900B78073 /* NSJSONSerialization+BPKit.m in Sources */,
 				D32AD37E14F9425900B78073 /* UIColor+BPKit.m in Sources */,
 				D360481914F9498200965DF6 /* BPAlertView.m in Sources */,
+				D31F113714FF24FD00CC6D29 /* NSSet+BPKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
