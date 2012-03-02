@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D308834C150097F100659388 /* NSBundle+BPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D308834A150097F100659388 /* NSBundle+BPKit.h */; };
+		D308834D150097F100659388 /* NSBundle+BPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D308834B150097F100659388 /* NSBundle+BPKit.m */; };
+		D30883521500995300659388 /* AboutViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D30883501500995300659388 /* AboutViewController.h */; };
+		D30883531500995300659388 /* BPAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D30883511500995300659388 /* BPAboutViewController.m */; };
+		D308835515009B5800659388 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D308835415009B5800659388 /* MessageUI.framework */; };
 		D31F113614FF24FD00CC6D29 /* NSSet+BPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D31F113414FF24FD00CC6D29 /* NSSet+BPKit.h */; };
 		D31F113714FF24FD00CC6D29 /* NSSet+BPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D31F113514FF24FD00CC6D29 /* NSSet+BPKit.m */; };
 		D32AD36A14F940D400B78073 /* BPTransparentToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = D32AD36814F940D400B78073 /* BPTransparentToolbar.h */; };
@@ -46,6 +51,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D308834A150097F100659388 /* NSBundle+BPKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+BPKit.h"; sourceTree = "<group>"; };
+		D308834B150097F100659388 /* NSBundle+BPKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+BPKit.m"; sourceTree = "<group>"; };
+		D30883501500995300659388 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		D30883511500995300659388 /* BPAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAboutViewController.m; sourceTree = "<group>"; };
+		D308835415009B5800659388 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D31F113414FF24FD00CC6D29 /* NSSet+BPKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+BPKit.h"; sourceTree = "<group>"; };
 		D31F113514FF24FD00CC6D29 /* NSSet+BPKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+BPKit.m"; sourceTree = "<group>"; };
 		D32AD36814F940D400B78073 /* BPTransparentToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPTransparentToolbar.h; sourceTree = "<group>"; };
@@ -82,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D308835515009B5800659388 /* MessageUI.framework in Frameworks */,
 				D3FCFFDC1426BB5A00EECE56 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,21 +111,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D308834F1500993800659388 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D30883501500995300659388 /* AboutViewController.h */,
+				D30883511500995300659388 /* BPAboutViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		D32AD35614F93FFF00B78073 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				D308834A150097F100659388 /* NSBundle+BPKit.h */,
+				D308834B150097F100659388 /* NSBundle+BPKit.m */,
 				D39C1DEE1426BD150017E5B7 /* NSDictionary+BPKit.h */,
 				D39C1DEF1426BD150017E5B7 /* NSDictionary+BPKit.m */,
 				D32AD36E14F9425900B78073 /* NSJSONSerialization+BPKit.h */,
 				D32AD36F14F9425900B78073 /* NSJSONSerialization+BPKit.m */,
+				D31F113414FF24FD00CC6D29 /* NSSet+BPKit.h */,
+				D31F113514FF24FD00CC6D29 /* NSSet+BPKit.m */,
 				D39C1DEA1426BCCC0017E5B7 /* NSString+BPKit.h */,
 				D39C1DEB1426BCCC0017E5B7 /* NSString+BPKit.m */,
 				D39C1DF21426C1460017E5B7 /* NSURL+BPKit.h */,
 				D39C1DF31426C1460017E5B7 /* NSURL+BPKit.m */,
 				D32AD37414F9425900B78073 /* UIColor+BPKit.h */,
 				D32AD37514F9425900B78073 /* UIColor+BPKit.m */,
-				D31F113414FF24FD00CC6D29 /* NSSet+BPKit.h */,
-				D31F113514FF24FD00CC6D29 /* NSSet+BPKit.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -153,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				D3FCFFDB1426BB5A00EECE56 /* Foundation.framework */,
+				D308835415009B5800659388 /* MessageUI.framework */,
 				D3FCFFE61426BB5A00EECE56 /* UIKit.framework */,
 				D3FCFFE91426BB5A00EECE56 /* CoreGraphics.framework */,
 			);
@@ -163,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				D32AD35614F93FFF00B78073 /* Categories */,
+				D308834F1500993800659388 /* Controllers */,
 				D32AD35814F9400800B78073 /* Views */,
 				D39C1DE71426BC9F0017E5B7 /* BPKit.h */,
 				D32AD36D14F9425900B78073 /* BPKit.m */,
@@ -215,6 +239,8 @@
 				D32AD37D14F9425900B78073 /* UIColor+BPKit.h in Headers */,
 				D360481814F9498200965DF6 /* BPAlertView.h in Headers */,
 				D31F113614FF24FD00CC6D29 /* NSSet+BPKit.h in Headers */,
+				D308834C150097F100659388 /* NSBundle+BPKit.h in Headers */,
+				D30883521500995300659388 /* AboutViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +352,8 @@
 				D32AD37E14F9425900B78073 /* UIColor+BPKit.m in Sources */,
 				D360481914F9498200965DF6 /* BPAlertView.m in Sources */,
 				D31F113714FF24FD00CC6D29 /* NSSet+BPKit.m in Sources */,
+				D308834D150097F100659388 /* NSBundle+BPKit.m in Sources */,
+				D30883531500995300659388 /* BPAboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

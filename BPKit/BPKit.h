@@ -22,12 +22,17 @@ typedef enum {
 
 #pragma mark - Categories
 
+#import "NSBundle+BPKit.h"
 #import "NSDictionary+BPKit.h"
 #import "NSJSONSerialization+BPKit.h"
 #import "NSSet+BPKit.h"
 #import "NSString+BPKit.h"
 #import "NSURL+BPKit.h"
 #import "UIColor+BPKit.h"
+
+#pragma mark - Controllers
+
+#import "AboutViewController.h"
 
 #pragma mark - Views
 
