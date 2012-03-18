@@ -23,6 +23,10 @@
 		D32AD37E14F9425900B78073 /* UIColor+BPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D32AD37514F9425900B78073 /* UIColor+BPKit.m */; };
 		D360481814F9498200965DF6 /* BPAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = D360481614F9498200965DF6 /* BPAlertView.h */; };
 		D360481914F9498200965DF6 /* BPAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = D360481714F9498200965DF6 /* BPAlertView.m */; };
+		D363430015157BDC006ACFDF /* BPSupportViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D36342FE15157BDC006ACFDF /* BPSupportViewController.h */; };
+		D363430115157BDC006ACFDF /* BPSupportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D36342FF15157BDC006ACFDF /* BPSupportViewController.m */; };
+		D3634304151586F1006ACFDF /* BPAboutViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D3634302151586F1006ACFDF /* BPAboutViewController.h */; };
+		D3634305151586F1006ACFDF /* BPAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3634303151586F1006ACFDF /* BPAboutViewController.m */; };
 		D39C1DE81426BC9F0017E5B7 /* BPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D39C1DE71426BC9F0017E5B7 /* BPKit.h */; };
 		D39C1DEC1426BCCC0017E5B7 /* NSString+BPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D39C1DEA1426BCCC0017E5B7 /* NSString+BPKit.h */; };
 		D39C1DED1426BCCC0017E5B7 /* NSString+BPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D39C1DEB1426BCCC0017E5B7 /* NSString+BPKit.m */; };
@@ -30,6 +34,8 @@
 		D39C1DF11426BD150017E5B7 /* NSDictionary+BPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D39C1DEF1426BD150017E5B7 /* NSDictionary+BPKit.m */; };
 		D39C1DF41426C1460017E5B7 /* NSURL+BPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D39C1DF21426C1460017E5B7 /* NSURL+BPKit.h */; };
 		D39C1DF51426C1460017E5B7 /* NSURL+BPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D39C1DF31426C1460017E5B7 /* NSURL+BPKit.m */; };
+		D3E88DDD15159CD900CEC8CD /* BPLicenseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D3E88DDB15159CD900CEC8CD /* BPLicenseViewController.h */; };
+		D3E88DDE15159CD900CEC8CD /* BPLicenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E88DDC15159CD900CEC8CD /* BPLicenseViewController.m */; };
 		D3FCFFDC1426BB5A00EECE56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FCFFDB1426BB5A00EECE56 /* Foundation.framework */; };
 		D3FCFFE71426BB5A00EECE56 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FCFFE61426BB5A00EECE56 /* UIKit.framework */; };
 		D3FCFFE81426BB5A00EECE56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FCFFDB1426BB5A00EECE56 /* Foundation.framework */; };
@@ -67,6 +73,10 @@
 		D32AD37514F9425900B78073 /* UIColor+BPKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BPKit.m"; sourceTree = "<group>"; };
 		D360481614F9498200965DF6 /* BPAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAlertView.h; sourceTree = "<group>"; };
 		D360481714F9498200965DF6 /* BPAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAlertView.m; sourceTree = "<group>"; };
+		D36342FE15157BDC006ACFDF /* BPSupportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPSupportViewController.h; sourceTree = "<group>"; };
+		D36342FF15157BDC006ACFDF /* BPSupportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPSupportViewController.m; sourceTree = "<group>"; };
+		D3634302151586F1006ACFDF /* BPAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAboutViewController.h; sourceTree = "<group>"; };
+		D3634303151586F1006ACFDF /* BPAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAboutViewController.m; sourceTree = "<group>"; };
 		D39C1DE71426BC9F0017E5B7 /* BPKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPKit.h; sourceTree = "<group>"; };
 		D39C1DEA1426BCCC0017E5B7 /* NSString+BPKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BPKit.h"; sourceTree = "<group>"; };
 		D39C1DEB1426BCCC0017E5B7 /* NSString+BPKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BPKit.m"; sourceTree = "<group>"; };
@@ -74,6 +84,8 @@
 		D39C1DEF1426BD150017E5B7 /* NSDictionary+BPKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+BPKit.m"; sourceTree = "<group>"; };
 		D39C1DF21426C1460017E5B7 /* NSURL+BPKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+BPKit.h"; sourceTree = "<group>"; };
 		D39C1DF31426C1460017E5B7 /* NSURL+BPKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+BPKit.m"; sourceTree = "<group>"; };
+		D3E88DDB15159CD900CEC8CD /* BPLicenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPLicenseViewController.h; sourceTree = "<group>"; };
+		D3E88DDC15159CD900CEC8CD /* BPLicenseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPLicenseViewController.m; sourceTree = "<group>"; };
 		D3FCFFD81426BB5A00EECE56 /* libBPKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBPKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3FCFFDB1426BB5A00EECE56 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D3FCFFDF1426BB5A00EECE56 /* BPKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BPKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -116,6 +128,12 @@
 			children = (
 				D30883501500995300659388 /* BPPlistAboutViewController.h */,
 				D30883511500995300659388 /* BPPlistAboutViewController.m */,
+				D36342FE15157BDC006ACFDF /* BPSupportViewController.h */,
+				D36342FF15157BDC006ACFDF /* BPSupportViewController.m */,
+				D3634302151586F1006ACFDF /* BPAboutViewController.h */,
+				D3634303151586F1006ACFDF /* BPAboutViewController.m */,
+				D3E88DDB15159CD900CEC8CD /* BPLicenseViewController.h */,
+				D3E88DDC15159CD900CEC8CD /* BPLicenseViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -241,6 +259,9 @@
 				D31F113614FF24FD00CC6D29 /* NSSet+BPKit.h in Headers */,
 				D308834C150097F100659388 /* NSBundle+BPKit.h in Headers */,
 				D30883521500995300659388 /* BPPlistAboutViewController.h in Headers */,
+				D363430015157BDC006ACFDF /* BPSupportViewController.h in Headers */,
+				D3634304151586F1006ACFDF /* BPAboutViewController.h in Headers */,
+				D3E88DDD15159CD900CEC8CD /* BPLicenseViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +375,9 @@
 				D31F113714FF24FD00CC6D29 /* NSSet+BPKit.m in Sources */,
 				D308834D150097F100659388 /* NSBundle+BPKit.m in Sources */,
 				D30883531500995300659388 /* BPPlistAboutViewController.m in Sources */,
+				D363430115157BDC006ACFDF /* BPSupportViewController.m in Sources */,
+				D3634305151586F1006ACFDF /* BPAboutViewController.m in Sources */,
+				D3E88DDE15159CD900CEC8CD /* BPLicenseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
