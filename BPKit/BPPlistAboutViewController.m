@@ -6,13 +6,13 @@
 //  Copyright (c) 2012 Brian Partridge. All rights reserved.
 //
 
-#import "AboutViewController.h"
+#import "BPPlistAboutViewController.h"
 
 NSString * const kBPSupportEmail = @"BPSupportEmail";
 NSString * const kBPSupportURL = @"BPSupportURL";
 NSString * const kBPAboutContent = @"BPAboutContent";
 
-@interface BPAboutViewController ()
+@interface BPPlistAboutViewController ()
 
 @property (nonatomic, strong) NSDictionary *content;
 @property (nonatomic, strong) NSArray *sections;
@@ -27,7 +27,7 @@ NSString * const kBPAboutContent = @"BPAboutContent";
 
 @end
 
-@implementation BPAboutViewController
+@implementation BPPlistAboutViewController
 
 @synthesize content;
 @synthesize sections;
@@ -71,11 +71,11 @@ NSString * const kBPAboutContent = @"BPAboutContent";
 }
 
 - (void)handleTapForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSDictionary *row = [self rowAtIndexPath:indexPath];
+//    NSDictionary *row = [self rowAtIndexPath:indexPath];
 }
 
 - (void)handleActionForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSDictionary *row = [self rowAtIndexPath:indexPath];
+//    NSDictionary *row = [self rowAtIndexPath:indexPath];
 }
 
 - (void)configureCell:(UITableViewCell *)cell forRowAtIndexPath:indexPath {

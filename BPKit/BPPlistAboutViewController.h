@@ -13,7 +13,10 @@ extern NSString * const kBPSupportEmail;
 extern NSString * const kBPSupportURL;
 extern NSString * const kBPAboutContent;
 
-@interface BPAboutViewController : UITableViewController
+/**
+ * Populates a tableview with content and actions supplied by a plist.
+ */
+@interface BPPlistAboutViewController : UITableViewController
 
 + (MFMailComposeViewController *)supportMailer;
 
