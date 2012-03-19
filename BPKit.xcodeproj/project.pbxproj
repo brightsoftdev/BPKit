@@ -27,6 +27,8 @@
 		D363430115157BDC006ACFDF /* BPSupportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D36342FF15157BDC006ACFDF /* BPSupportViewController.m */; };
 		D3634304151586F1006ACFDF /* BPAboutViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D3634302151586F1006ACFDF /* BPAboutViewController.h */; };
 		D3634305151586F1006ACFDF /* BPAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3634303151586F1006ACFDF /* BPAboutViewController.m */; };
+		D394257F1517B7610074AC09 /* BPTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D394257D1517B7610074AC09 /* BPTableViewController.h */; };
+		D39425801517B7610074AC09 /* BPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D394257E1517B7610074AC09 /* BPTableViewController.m */; };
 		D39C1DE81426BC9F0017E5B7 /* BPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D39C1DE71426BC9F0017E5B7 /* BPKit.h */; };
 		D39C1DEC1426BCCC0017E5B7 /* NSString+BPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D39C1DEA1426BCCC0017E5B7 /* NSString+BPKit.h */; };
 		D39C1DED1426BCCC0017E5B7 /* NSString+BPKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D39C1DEB1426BCCC0017E5B7 /* NSString+BPKit.m */; };
@@ -77,6 +79,8 @@
 		D36342FF15157BDC006ACFDF /* BPSupportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPSupportViewController.m; sourceTree = "<group>"; };
 		D3634302151586F1006ACFDF /* BPAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAboutViewController.h; sourceTree = "<group>"; };
 		D3634303151586F1006ACFDF /* BPAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAboutViewController.m; sourceTree = "<group>"; };
+		D394257D1517B7610074AC09 /* BPTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPTableViewController.h; sourceTree = "<group>"; };
+		D394257E1517B7610074AC09 /* BPTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTableViewController.m; sourceTree = "<group>"; };
 		D39C1DE71426BC9F0017E5B7 /* BPKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPKit.h; sourceTree = "<group>"; };
 		D39C1DEA1426BCCC0017E5B7 /* NSString+BPKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BPKit.h"; sourceTree = "<group>"; };
 		D39C1DEB1426BCCC0017E5B7 /* NSString+BPKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BPKit.m"; sourceTree = "<group>"; };
@@ -134,6 +138,8 @@
 				D3634303151586F1006ACFDF /* BPAboutViewController.m */,
 				D3E88DDB15159CD900CEC8CD /* BPLicenseViewController.h */,
 				D3E88DDC15159CD900CEC8CD /* BPLicenseViewController.m */,
+				D394257D1517B7610074AC09 /* BPTableViewController.h */,
+				D394257E1517B7610074AC09 /* BPTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -262,6 +268,7 @@
 				D363430015157BDC006ACFDF /* BPSupportViewController.h in Headers */,
 				D3634304151586F1006ACFDF /* BPAboutViewController.h in Headers */,
 				D3E88DDD15159CD900CEC8CD /* BPLicenseViewController.h in Headers */,
+				D394257F1517B7610074AC09 /* BPTableViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +385,7 @@
 				D363430115157BDC006ACFDF /* BPSupportViewController.m in Sources */,
 				D3634305151586F1006ACFDF /* BPAboutViewController.m in Sources */,
 				D3E88DDE15159CD900CEC8CD /* BPLicenseViewController.m in Sources */,
+				D39425801517B7610074AC09 /* BPTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

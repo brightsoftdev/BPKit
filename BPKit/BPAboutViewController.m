@@ -33,8 +33,6 @@ typedef enum {
 
 @implementation BPAboutViewController
 
-@synthesize cellColor;
-
 @synthesize data;
 
 - (void)viewDidLoad
@@ -47,8 +45,6 @@ typedef enum {
 }
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
-    cell.backgroundColor = self.cellColor;
-    
     switch (indexPath.section) {
         case SectionCreator:
             switch (indexPath.row) {

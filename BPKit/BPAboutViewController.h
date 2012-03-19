@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BPAboutViewController : UITableViewController
-
-@property (nonatomic, strong) UIColor *cellColor;
+@interface BPAboutViewController : BPTableViewController
 
 @end

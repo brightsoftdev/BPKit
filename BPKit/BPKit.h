@@ -32,6 +32,7 @@ typedef enum {
 
 #pragma mark - Controllers
 
+#import "BPTableViewController.h"
 #import "BPSupportViewController.h"
 #import "BPAboutViewController.h"
 #import "BPLicenseViewController.h"

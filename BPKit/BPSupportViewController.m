@@ -11,11 +11,17 @@
 
 typedef enum {
     SectionSupport,
-    SectionRate,
-    SectionUpgrade,
+    SectionLike,
     SectionAbout,
     SectionCount,
 } Sections;
+
+typedef enum {
+    SectionLikeRowRate,
+    SectionLikeRowUpgrade,
+    SectionLikeRowCount,
+    SectionLikeRowCountNoUpgrade = SectionLikeRowUpgrade,
+} SectionLikeRows;
 
 @interface BPSupportViewController ()
 
@@ -28,8 +34,6 @@ typedef enum {
 
 @implementation BPSupportViewController
 
-@synthesize cellColor;
-
 @synthesize data;
 @synthesize sections;
 
@@ -40,34 +44,34 @@ typedef enum {
     
     self.data = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"BPSupportContent"];
     
-    BOOL showUpgradePath = (![NSString bp_isNilOrEmpty:[self.data objectForKey:@"BPUpgradeURL"]]);
-    
     self.sections = [NSMutableArray arrayWithObjects:[NSNumber numberWithInt:SectionSupport], 
-                     [NSNumber numberWithInt:SectionRate], nil];
-    if (showUpgradePath) {
-        [self.sections addObject:[NSNumber numberWithInt:SectionUpgrade]];
-    }
-    [self.sections addObject:[NSNumber numberWithInt:SectionAbout]];
+                     [NSNumber numberWithInt:SectionLike], 
+                     [NSNumber numberWithInt:SectionAbout], 
+                     nil];
 }
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
-    cell.backgroundColor = self.cellColor;
-    
     switch (indexPath.section) {
-        case SectionRate:
-            cell.textLabel.text = [NSString stringWithFormat:@"I love it!", [NSBundle mainBundle].bp_name];
-            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-            cell.imageView.image = [UIImage imageNamed:@"rate"];
-            break;
         case SectionSupport:
             cell.textLabel.text = @"Contact Support";
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             cell.imageView.image = [UIImage imageNamed:@"support"];
             break;
-        case SectionUpgrade:
-            cell.textLabel.text = @"Upgrade To Pro";
-            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-            cell.imageView.image = [UIImage imageNamed:@"upgrade"];
+        case SectionLike:
+            switch (indexPath.row) {
+                case SectionLikeRowRate:
+                    cell.textLabel.text = [NSString stringWithFormat:@"I love it!", [NSBundle mainBundle].bp_name];
+                    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+                    cell.imageView.image = [UIImage imageNamed:@"rate"];
+                    break;
+                case SectionLikeRowUpgrade:
+                    cell.textLabel.text = @"Upgrade To Pro";
+                    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+                    cell.imageView.image = [UIImage imageNamed:@"upgrade"];
+                    break;
+                default:
+                    break;
+            }
             break;
         case SectionAbout:
             cell.textLabel.text = @"About";
@@ -85,7 +89,14 @@ typedef enum {
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    NSInteger count = 1;
+    
+    if (section == SectionLike) {
+        count = ([NSString bp_isNilOrEmpty:[self.data objectForKey:@"BPUpgradeURL"]]) ?
+                    SectionLikeRowCountNoUpgrade : SectionLikeRowCount;
+    }
+    
+    return count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -108,7 +119,7 @@ typedef enum {
         case SectionSupport:
             title = @"Found a problem?";
             break;
-        case SectionRate:
+        case SectionLike:
             title = [NSString stringWithFormat:@"Like %@?", [NSBundle mainBundle].bp_name];
             break;
         default:
@@ -121,13 +132,11 @@ typedef enum {
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
     UIView *footer = nil;
     
-    switch (section) {
-        case SectionUpgrade:
-            // TODO: generate view
-            break;
-        default:
-            break;
+#ifndef POCKET_SHARE_PRO
+    if (section == SectionLike) {
+        // TODO: generate view
     }
+#endif
     
     return footer;
 }
@@ -138,10 +147,6 @@ typedef enum {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     switch (indexPath.section) {
-        case SectionRate: {
-            NSURL *url = [NSURL URLWithString:[self.data objectForKey:@"BPRateURL"]];
-            [[UIApplication sharedApplication] openURL:url];
-        }   break;
         case SectionSupport: {
             MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
             mailer.mailComposeDelegate = self;
@@ -153,15 +158,25 @@ typedef enum {
             [mailer setMessageBody:body isHTML:NO];
             [self presentModalViewController:mailer animated:YES];
         }   break;
-        case SectionUpgrade: {
-            NSURL *url = [NSURL URLWithString:[self.data objectForKey:@"BPUpgradeURL"]];
-            [[UIApplication sharedApplication] openURL:url];
-        }   break;
+        case SectionLike:
+            switch (indexPath.row) {
+                case SectionLikeRowRate: {
+                    NSURL *url = [NSURL URLWithString:[self.data objectForKey:@"BPRateURL"]];
+                    [[UIApplication sharedApplication] openURL:url];
+                }   break;
+                case SectionLikeRowUpgrade: {
+                    NSURL *url = [NSURL URLWithString:[self.data objectForKey:@"BPUpgradeURL"]];
+                    [[UIApplication sharedApplication] openURL:url];
+                }   break;
+                default:
+                    break;
+            }
+            break;
         case SectionAbout: {
             BPAboutViewController *about = [[BPAboutViewController alloc] initWithStyle:self.tableView.style];
             about.tableView.backgroundColor = self.tableView.backgroundColor;
             about.tableView.backgroundView = [self.tableView.backgroundView copy];
-            about.cellColor = self.cellColor;
+            [self shareBlocksWithController:about];
             [self.navigationController pushViewController:about animated:YES];
         }   break;
         default:

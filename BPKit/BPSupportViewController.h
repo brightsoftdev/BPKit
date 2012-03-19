@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
 
-@interface BPSupportViewController : UITableViewController <MFMailComposeViewControllerDelegate>
-
-@property (nonatomic, strong) UIColor *cellColor;
+@interface BPSupportViewController : BPTableViewController <MFMailComposeViewControllerDelegate>
 
 @end
