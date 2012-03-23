@@ -1,12 +1,12 @@
 //
-//  BPAboutViewController.m
+//  BPCreditsViewController.m
 //  BPKit
 //
 //  Created by Brian Partridge on 3/17/12.
 //  Copyright (c) 2012 Brian Partridge. All rights reserved.
 //
 
-#import "BPAboutViewController.h"
+#import "BPCreditsViewController.h"
 #import "BPLicenseViewController.h"
 
 typedef enum {
@@ -19,11 +19,11 @@ typedef enum {
 
 typedef enum {
     SectionCreatorRowName,
-    SectionCreatorRowTwitter,
     SectionCreatorRowCount,
+    SectionCreatorRowTwitter,
 } SectionCreatorRows;
 
-@interface BPAboutViewController ()
+@interface BPCreditsViewController ()
 
 @property (nonatomic, strong) NSDictionary *data;
 
@@ -31,7 +31,7 @@ typedef enum {
 
 @end
 
-@implementation BPAboutViewController
+@implementation BPCreditsViewController
 
 @synthesize data;
 
@@ -39,7 +39,7 @@ typedef enum {
 {
     [super viewDidLoad];
     
-    self.title = @"About";
+    self.title = @"Credits";
     
     self.data = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"BPAboutContent"];
 }

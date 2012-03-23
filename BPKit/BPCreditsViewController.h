@@ -1,5 +1,5 @@
 //
-//  BPAboutViewController.h
+//  BPCreditsViewController.h
 //  BPKit
 //
 //  Created by Brian Partridge on 3/17/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BPAboutViewController : BPTableViewController
+@interface BPCreditsViewController : BPTableViewController
 
 @end

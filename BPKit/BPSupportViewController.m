@@ -7,7 +7,7 @@
 //
 
 #import "BPSupportViewController.h"
-#import "BPAboutViewController.h"
+#import "BPCreditsViewController.h"
 
 typedef enum {
     SectionSupport,
@@ -22,6 +22,12 @@ typedef enum {
     SectionLikeRowCount,
     SectionLikeRowCountNoUpgrade = SectionLikeRowUpgrade,
 } SectionLikeRows;
+
+typedef enum {
+    SectionAboutRowApp,
+    SectionAboutRowCredits,
+    SectionAboutRowCount,
+} SectionAboutRows;
 
 @interface BPSupportViewController ()
 
@@ -74,8 +80,18 @@ typedef enum {
             }
             break;
         case SectionAbout:
-            cell.textLabel.text = @"About";
-            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            switch (indexPath.row) {
+                case SectionAboutRowApp:
+                    cell.textLabel.text = [NSBundle mainBundle].bp_name;
+                    cell.detailTextLabel.text = [NSString stringWithFormat:@"v%@", [NSBundle mainBundle].bp_version];
+                    break;
+                case SectionAboutRowCredits:
+                    cell.textLabel.text = @"Credits";
+                    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+                    break;
+                default:
+                    break;
+            }
             break;
         default:
             break;
@@ -89,11 +105,21 @@ typedef enum {
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSInteger count = 1;
+    NSInteger count = 0;
     
-    if (section == SectionLike) {
-        count = ([NSString bp_isNilOrEmpty:[self.data objectForKey:@"BPUpgradeURL"]]) ?
-                    SectionLikeRowCountNoUpgrade : SectionLikeRowCount;
+    switch (section) {
+        case SectionSupport:
+            count = 1;
+            break;
+        case SectionLike:
+            count = ([NSString bp_isNilOrEmpty:[self.data objectForKey:@"BPUpgradeURL"]]) ?
+                      SectionLikeRowCountNoUpgrade : SectionLikeRowCount;
+            break;
+        case SectionAbout:
+            count = SectionAboutRowCount;
+            break;
+        default:
+            break;
     }
     
     return count;
@@ -104,7 +130,7 @@ typedef enum {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     }
     
     [self configureCell:cell atIndexPath:indexPath];
@@ -121,6 +147,23 @@ typedef enum {
             break;
         case SectionLike:
             title = [NSString stringWithFormat:@"Like %@?", [NSBundle mainBundle].bp_name];
+            break;
+        default:
+            break;
+    }
+    
+    return title;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
+    NSString *title = nil;
+    
+    switch (section) {
+        case SectionLike:
+            title = [self.data objectForKey:@"BPUpgradeCopy"];
+            break;
+        case SectionAbout:
+            title = [NSString stringWithFormat:@"‌© %@ %@", [self.data objectForKey:@"BPCopyrightYear"], [self.data objectForKey:@"BPCopyrightHolder"]];
             break;
         default:
             break;
@@ -173,11 +216,11 @@ typedef enum {
             }
             break;
         case SectionAbout: {
-            BPAboutViewController *about = [[BPAboutViewController alloc] initWithStyle:self.tableView.style];
-            about.tableView.backgroundColor = self.tableView.backgroundColor;
-            about.tableView.backgroundView = [self.tableView.backgroundView copy];
-            [self shareBlocksWithController:about];
-            [self.navigationController pushViewController:about animated:YES];
+            BPCreditsViewController *credits = [[BPCreditsViewController alloc] initWithStyle:self.tableView.style];
+            credits.tableView.backgroundColor = self.tableView.backgroundColor;
+            credits.tableView.backgroundView = [self.tableView.backgroundView copy];
+            [self shareBlocksWithController:credits];
+            [self.navigationController pushViewController:credits animated:YES];
         }   break;
         default:
             break;

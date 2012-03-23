@@ -34,7 +34,7 @@ typedef enum {
 
 #import "BPTableViewController.h"
 #import "BPSupportViewController.h"
-#import "BPAboutViewController.h"
+#import "BPCreditsViewController.h"
 #import "BPLicenseViewController.h"
 
 #import "BPPlistAboutViewController.h"
