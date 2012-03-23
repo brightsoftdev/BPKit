@@ -19,6 +19,8 @@
 @synthesize didAppear;
 @synthesize styleCell;
 @synthesize styleHeaderView;
+@synthesize styleFooterView;
+@synthesize footerHeight;
 
 - (void)shareBlocksWithController:(BPTableViewController *)controller {
     controller.didLoad = self.didLoad;
@@ -26,6 +28,8 @@
     controller.didAppear = self.didAppear;
     controller.styleCell = self.styleCell;
     controller.styleHeaderView = self.styleHeaderView;
+    controller.styleFooterView = self.styleFooterView;
+    controller.footerHeight = self.footerHeight;
 }
 
 - (id)init {
@@ -78,6 +82,26 @@
     }
     
     return header;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    UIView *footer = nil;
+    
+    if (self.styleFooterView != nil) {
+        footer = self.styleFooterView(tableView, section);
+    }
+    
+    return footer;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    CGFloat height = 0;
+    
+    if (self.footerHeight != nil) {
+        height = self.footerHeight(tableView, [NSIndexPath indexPathForRow:0 inSection:section]);
+    }
+    
+    return height;
 }
 
 #pragma mark - Table view delegate

@@ -11,6 +11,7 @@
 typedef void (^BPLifecycleBlock)(UIViewController *viewController, BOOL animated);
 typedef void (^BPCellBlock)(UITableViewCell *cell);
 typedef UIView *(^BPCustomViewBlock)(UITableView *tableView, NSInteger section);
+typedef CGFloat (^BPHeightBlock)(UITableView *tableView, NSIndexPath *indexPath);
 
 @interface BPTableViewController : UITableViewController
 
@@ -20,6 +21,8 @@ typedef UIView *(^BPCustomViewBlock)(UITableView *tableView, NSInteger section);
 
 @property (nonatomic, copy) BPCellBlock styleCell;
 @property (nonatomic, copy) BPCustomViewBlock styleHeaderView;
+@property (nonatomic, copy) BPCustomViewBlock styleFooterView;
+@property (nonatomic, copy) BPHeightBlock footerHeight;
 
 - (void)shareBlocksWithController:(BPTableViewController *)controller;
 

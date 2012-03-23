@@ -172,18 +172,6 @@ typedef enum {
     return title;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
-    UIView *footer = nil;
-    
-#ifndef POCKET_SHARE_PRO
-    if (section == SectionLike) {
-        // TODO: generate view
-    }
-#endif
-    
-    return footer;
-}
-
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
