@@ -84,6 +84,7 @@ typedef enum {
                 case SectionAboutRowApp:
                     cell.textLabel.text = [NSBundle mainBundle].bp_name;
                     cell.detailTextLabel.text = [NSString stringWithFormat:@"v%@", [NSBundle mainBundle].bp_version];
+                    cell.selectionStyle = UITableViewCellSelectionStyleNone;
                     break;
                 case SectionAboutRowCredits:
                     cell.textLabel.text = @"Credits";
@@ -204,11 +205,15 @@ typedef enum {
             }
             break;
         case SectionAbout: {
-            BPCreditsViewController *credits = [[BPCreditsViewController alloc] initWithStyle:self.tableView.style];
-            credits.tableView.backgroundColor = self.tableView.backgroundColor;
-            credits.tableView.backgroundView = [self.tableView.backgroundView copy];
-            [self shareBlocksWithController:credits];
-            [self.navigationController pushViewController:credits animated:YES];
+            switch (indexPath.row) {
+                case SectionAboutRowCredits: {
+                    BPCreditsViewController *credits = [[BPCreditsViewController alloc] initWithStyle:self.tableView.style];
+                    [self shareBlocksWithController:credits];
+                    [self.navigationController pushViewController:credits animated:YES];
+                }   break;
+                default:
+                    break;
+            }
         }   break;
         default:
             break;
