@@ -9,6 +9,11 @@
 #import "BPSupportViewController.h"
 #import "BPCreditsViewController.h"
 
+static NSString * const kBPContactSupportImage = @"BPContactSupportImage";
+static NSString * const kBPRateImage = @"BPRateImage";
+static NSString * const kBPUpgradeImage = @"BPUpgradeImage";
+static NSString * const kBPCreditsImage = @"BPCreditsImage";
+
 typedef enum {
     SectionSupport,
     SectionLike,
@@ -61,19 +66,19 @@ typedef enum {
         case SectionSupport:
             cell.textLabel.text = @"Contact Support";
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-            cell.imageView.image = [UIImage imageNamed:@"support"];
+            cell.imageView.image = [UIImage imageNamed:[self.data objectForKey:kBPContactSupportImage]];
             break;
         case SectionLike:
             switch (indexPath.row) {
                 case SectionLikeRowRate:
-                    cell.textLabel.text = [NSString stringWithFormat:@"I love it!", [NSBundle mainBundle].bp_name];
+                    cell.textLabel.text = [NSString stringWithFormat:@"I Love It!", [NSBundle mainBundle].bp_name];
                     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-                    cell.imageView.image = [UIImage imageNamed:@"rate"];
+                    cell.imageView.image = [UIImage imageNamed:[self.data objectForKey:kBPRateImage]];
                     break;
                 case SectionLikeRowUpgrade:
                     cell.textLabel.text = @"Upgrade To Pro";
                     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-                    cell.imageView.image = [UIImage imageNamed:@"upgrade"];
+                    cell.imageView.image = [UIImage imageNamed:[self.data objectForKey:kBPUpgradeImage]];
                     break;
                 default:
                     break;
@@ -89,6 +94,7 @@ typedef enum {
                 case SectionAboutRowCredits:
                     cell.textLabel.text = @"Credits";
                     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+                    cell.imageView.image = [UIImage imageNamed:[self.data objectForKey:kBPCreditsImage]];
                     break;
                 default:
                     break;
